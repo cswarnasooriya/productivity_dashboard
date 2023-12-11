@@ -1,0 +1,97 @@
+:root{
+    --yellowcolor: #e1f296;
+    --lightGreenColor: #5aba8a;
+    --darkGreenColor: #01565b;
+    --textColor: #044561;
+    --h1Color: #012e33;
+    --cardColor: #4c9fa7;
+    --whiteColor: hsl(0,0%,100%);
+    --greyText: rgb(190,190,190);
+    --inputColor: hsl(224,39%,80%);
+
+/* font and typography*/
+
+    --h1FontSize: 2.5rem;
+    --h2FontSize: 1.25rem;
+    --normalFontSize: 1rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
+}
+
+.sideBar{
+    width: 6%;
+    height: auto;
+    display: grid;
+    align-items: flex-start;
+
+    .logoDiv{
+        padding: 1rem;
+        justify-content: center;
+
+
+        img{
+            width: 40px;
+        }
+    }
+
+    .menu{
+        width: 100%;
+
+
+        .navItem{
+            .navList{
+                display: none;
+                position: relative;
+                display: grid;
+                justify-content: center;
+                align-items: flex-start;
+                width: 100%;
+                padding: 1rem 0;
+                cursor: pointer;
+                overflow: hidden;
+
+                &::after{
+                    display: none;
+                    position: absolute;
+                    content: ' ';
+                    top: 50%;
+                    right: 0;
+                    width: 3px;
+                    height: 25%;
+                    border-radius: 10px;
+                    transition: .3s ease;
+                    background: var(--lightGreenColor);
+                }
+
+                &::before{
+                    
+                    position: absolute;
+                    content: ' ';
+                    top: 50%;
+                    right: 0;
+                    width: 3px;
+                    height: 25%;
+                    border-radius: 10px;
+                    transition: .3s ease;
+                    background: var(--darkGreenColor);
+
+                }
+
+                .icon{
+                    width: 100%;
+                    color: var(--greyText);
+
+                }
+
+                &:hover{
+                    &::after, &::before{
+                        display: block;
+
+                    }
+                }
+               
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+:root {
+  --yellowcolor: #e1f296;
+  --lightGreenColor: #5aba8a;
+  --darkGreenColor: #01565b;
+  --textColor: #044561;
+  --h1Color: #012e33;
+  --cardColor: #4c9fa7;
+  --whiteColor: hsl(0,0%,100%);
+  --greyText: rgb(190,190,190);
+  --inputColor: hsl(224,39%,80%);
+  /* font and typography*/
+  --h1FontSize: 2.5rem;
+  --h2FontSize: 1.25rem;
+  --normalFontSize: 1rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.sideBar {
+  width: 6%;
+  height: auto;
+  display: grid;
+  align-items: flex-start;
+}
+.sideBar .logoDiv {
+  padding: 1rem;
+  justify-content: center;
+}
+.sideBar .logoDiv img {
+  width: 40px;
+}
+.sideBar .menu {
+  width: 100%;
+}
+.sideBar .menu .navItem .navList {
+  display: none;
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+.sideBar .menu .navItem .navList::after {
+  display: none;
+  position: absolute;
+  content: " ";
+  top: 50%;
+  right: 0;
+  width: 3px;
+  height: 25%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  background: var(--lightGreenColor);
+}
+.sideBar .menu .navItem .navList::before {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  right: 0;
+  width: 3px;
+  height: 25%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  background: var(--darkGreenColor);
+}
+.sideBar .menu .navItem .navList .icon {
+  width: 100%;
+  color: var(--greyText);
+}
+.sideBar .menu .navItem .navList:hover::after, .sideBar .menu .navItem .navList:hover::before {
+  display: block;
+}/*# sourceMappingURL=sidebar.css.map */
