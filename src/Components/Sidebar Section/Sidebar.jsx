@@ -2,7 +2,7 @@ import React from 'react';
 import './sidebar.css';
 
 //images
-import logo from '../../Assets/logo2.png';
+import logo from '../../Assets/newlogo.png';
 
 
 

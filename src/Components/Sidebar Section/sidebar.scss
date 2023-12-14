@@ -31,7 +31,7 @@
 
 
         img{
-            width: 40px;
+            width: 90px;
         }
     }
 
@@ -65,7 +65,7 @@
                 }
 
                 &::before{
-                    
+                    display: none;
                     position: absolute;
                     content: ' ';
                     top: 50%;
@@ -88,6 +88,10 @@
                     &::after, &::before{
                         display: block;
 
+                    }
+
+                    .icon{
+                        color: var(--darkGreenColor);
                     }
                 }
                

@@ -27,7 +27,7 @@
   justify-content: center;
 }
 .sideBar .logoDiv img {
-  width: 40px;
+  width: 90px;
 }
 .sideBar .menu {
   width: 100%;
@@ -56,6 +56,7 @@
   background: var(--lightGreenColor);
 }
 .sideBar .menu .navItem .navList::before {
+  display: none;
   position: absolute;
   content: " ";
   top: 50%;
@@ -72,4 +73,7 @@
 }
 .sideBar .menu .navItem .navList:hover::after, .sideBar .menu .navItem .navList:hover::before {
   display: block;
+}
+.sideBar .menu .navItem .navList:hover .icon {
+  color: var(--darkGreenColor);
 }/*# sourceMappingURL=sidebar.css.map */
