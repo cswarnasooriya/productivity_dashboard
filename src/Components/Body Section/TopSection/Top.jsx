@@ -14,6 +14,7 @@ const Top = () => {
     <div className='top'>
 
       <div className="topDiv flex">
+
         <div className="titleText">
           <span className='title'>Working Productivity</span>
           <p>Let's check your progress</p>
@@ -27,6 +28,7 @@ const Top = () => {
       </div>
 
       <div className="cardDiv flex">
+
         <div className="cards">
 
           <div className="card yellowCard flex">
@@ -142,10 +144,93 @@ const Top = () => {
 
 
         </div>
+
+
+        <div className="statsDiv">
+
+          <span className="title">
+            Statistics On November
+          </span>
+
+
+          <div className="stat">
+
+            <div className="singleStat">
+              <div className="statInfo flex">
+                <span className='status'>Complete Works</span>
+                <span className='percentage'>42%</span>
+              </div>
+
+
+              <div className="line">
+                <span className='range'>
+
+                </span>
+
+
+              </div>
+            </div>
+
+            <div className="singleStat">
+              <div className="statInfo flex">
+                <span className='status'>Tasks Completed</span>
+                <span className='percentage'>78%</span>
+              </div>
+
+
+              <div className="line">
+                <span className='range'>
+
+                </span>
+
+
+              </div>
+            </div>
+
+            <div className="singleStat">
+              <div className="statInfo flex">
+                <span className='status'>Upcoming Tasks</span>
+                <span className='percentage'>25%</span>
+              </div>
+
+
+              <div className="line">
+                <span className='range'>
+
+                </span>
+
+
+              </div>
+            </div>
+
+
+
+            <div className="singleStat">
+              <div className="statInfo flex">
+                <span className='status'>Working Hours</span>
+                <span className='percentage'>62%</span>
+              </div>
+
+
+              <div className="line">
+                <span className='range'>
+
+                </span>
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
       </div>
       
     </div>
   )
 }
 
-export default Top
+export default Top;
