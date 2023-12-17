@@ -1,1 +1,84 @@
-/*# sourceMappingURL=bottom.css.map */
+:root {
+  --yellowcolor: #e1f296;
+  --lightGreenColor: #5aba8a;
+  --darkGreenColor: #01565b;
+  --textColor: #044561;
+  --h1Color: #012e33;
+  --cardColor: #4c9fa7;
+  --whiteColor: hsl(0,0%,100%);
+  --greyText: rgb(190,190,190);
+  --inputColor: hsl(224,39%,80%);
+  /* font and typography*/
+  --h1FontSize: 2.5rem;
+  --h2FontSize: 1.25rem;
+  --normalFontSize: 1rem;
+  --smallFontSize: .813rem;
+  --smallestFontSize: .75rem;
+}
+
+.bottom {
+  margin-top: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.bottom .graphDiv {
+  flex-basis: 50%;
+}
+.bottom .graphDiv .title {
+  font-weight: 700;
+  color: var(--textColor);
+  display: block;
+  padding-bottom: 1rem;
+}
+.bottom .scheduleDiv {
+  width: 100%;
+}
+.bottom .scheduleDiv .singleTask {
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.bottom .scheduleDiv .singleTask .imgDiv {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid rgb(217, 215, 215);
+  padding: 0.5rem;
+  justify-content: center;
+  margin-right: 1rem;
+}
+.bottom .scheduleDiv .singleTask .imgDiv img {
+  width: 20px;
+}
+.bottom .scheduleDiv .singleTask .taskInfo {
+  flex: 1;
+}
+.bottom .scheduleDiv .singleTask .taskInfo .task {
+  font-weight: 700;
+  font-size: var(--h2FontSize);
+  display: block;
+  gap: 0.2rem;
+  color: var(--darkGreenColor);
+}
+.bottom .scheduleDiv .singleTask .taskInfo .status {
+  font-size: var(--smallFontSize);
+  color: var(--darkGreenColor);
+  font-weight: 500;
+  opacity: 0.9;
+}
+.bottom .scheduleDiv .singleTask .time {
+  font-weight: 600;
+  color: var(--darkGreenColor);
+  opacity: 0.8;
+}
+.bottom .scheduleDiv .btn {
+  background: var(--darkGreenColor);
+  color: var(--yellowcolor);
+  border-radius: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+.bottom .scheduleDiv .btn:hover {
+  background: var(--cardColor);
+}/*# sourceMappingURL=bottom.css.map */

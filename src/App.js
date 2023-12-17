@@ -14,6 +14,7 @@ const App = () => {
 
       <Sidebar/>
       <Body/>
+      <Account/>
      
 
 

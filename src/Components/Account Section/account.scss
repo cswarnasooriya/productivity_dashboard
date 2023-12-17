@@ -1,0 +1,168 @@
+:root{
+    --yellowcolor: #e1f296;
+    --lightGreenColor: #5aba8a;
+    --darkGreenColor: #01565b;
+    --textColor: #044561;
+    --h1Color: #012e33;
+    --cardColor: #4c9fa7;
+    --whiteColor: hsl(0,0%,100%);
+    --greyText: rgb(190,190,190);
+    --inputColor: hsl(224,39%,80%);
+
+/* font and typography*/
+
+    --h1FontSize: 2.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 1rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
+}
+
+.account{
+    width: 25%;
+    background: linear-gradient((rgb(4,69,97)), hsla(183,98%,18%, 0.051)),url(../../Assets/img.jpg);
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 2.5rem;
+
+    .icons{
+        justify-content: space-between;
+        color: var(--whiteColor);
+        cursor: pointer;
+
+        .icon{
+            background: rgba(225,255,255,0.151);
+            border-radius: 50%;
+            padding: .4rem;
+            height: 30px;
+            width: 30px;
+        }
+
+    }
+
+    .accountDetails{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        margin-top: 2rem;
+
+        .imageDiv{
+            display: grid;
+            align-items: center;
+            text-align: center;
+            margin: auto;
+
+            img{
+                width: 70px;
+                display: block;
+                margin: auto;
+                background: var(--inputColor);
+                border-radius: 50%;
+                padding: 5px;
+                margin-bottom: 1rem;
+            }
+
+            .name{
+                font-size: var(--h2FontSize);
+                color: var(--whiteColor);
+                font-weight: 500;
+            }
+
+            .position{
+                padding: .5rem 0;
+                color: var(--whiteColor);
+                opacity: .6;
+                font-size: var(--smallFontSize);
+            }
+
+            .btn{
+                border-radius: 5rem;
+                margin: 1rem 0;
+                margin-left: 22px;
+                width: 170px;
+                gap: 1.5rem;
+
+                &:hover{
+                    background: var(--inputColor);
+                    color: var(--textColor);
+
+                }
+
+            }
+        }
+
+
+
+        .hoursDiv{
+            margin-top: 1rem;
+            text-align: center;
+
+
+            .title{
+                color: var(--whiteColor);
+                font-weight: 500;
+                padding-bottom: .5rem;
+                font-size: var(--h3FontSize);
+                display: block;
+                margin-bottom: .3rem;
+
+            }
+
+            .hoursCard{
+                margin: auto;
+                padding: .5rem;
+                background: var(--cardColor);
+                justify-content: space-between;
+                width: max-content;
+                gap: 1rem;
+                border-radius: 1rem;
+
+                .right, .left{
+                    color: var(--whiteColor);
+
+                    span{
+                        display: block;
+                        font-size: var(--smallFontSize);
+                        padding-bottom: .3rem;
+                    }
+
+                    h6{
+                        font-size: var(--h3FontSize);
+                    }
+                }
+
+                .bg, .noBg{
+                    background: var(--whiteColor);
+                    padding: 1rem 2rem;
+                    color: var(--darkGreenColor);
+                    border-radius: .7rem;
+
+                
+                }
+                .noBg{
+                    background: transparent;
+                    color: var(--whiteColor);
+                }
+            }
+        }
+
+        .city{
+            color: var(--whiteColor);
+            text-align: center;
+            margin-top: 1rem;
+            padding: .5rem 0;
+        }
+
+        .region{
+            text-align: center;
+            color: var(--whiteColor);
+            font-size: var(--smallFontSize);
+        }
+
+    }
+}
